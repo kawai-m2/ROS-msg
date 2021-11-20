@@ -9,6 +9,8 @@ double dd[6][6];
 
 
 void massegeCallbnack(const test_msg::test & test_sub){
+  
+  ROS_INFO("%s",test_sub.std.c_str());
   sub_i = test_sub.i;
   sub_f = test_sub.f;
   ROS_INFO("%d,%f",sub_i,sub_f);
